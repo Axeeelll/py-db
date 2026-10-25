@@ -8,8 +8,9 @@ from .utils import _now
 
 
 class Role(IntEnum):
-    Student = 0
-    Teacher = 1
+    # Stored user_rft values are also the public API/frontend values.
+    Student = 1
+    Teacher = 0
     Admin = 2
 
 
