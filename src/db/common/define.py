@@ -8,9 +8,9 @@ from .utils import _now
 
 
 class Role(IntEnum):
-    # Stored user_rft values are also the public API/frontend values.
-    Student = 1
-    Teacher = 0
+    # Preserve Python's original role values; existing database rows are not migrated.
+    Student = 0
+    Teacher = 1
     Admin = 2
 
 
